@@ -1,0 +1,32 @@
+{
+  "name": "scripts-loader",
+  "version": "1.0.0",
+  "description": "Hot scripts and/or functions loader",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ducreyna/node-scripts-loader.git"
+  },
+  "keywords": [
+    "hot",
+    "scripts",
+    "loader",
+    "node"
+  ],
+  "author": "Nathan Ducrey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ducreyna/node-scripts-loader/issues"
+  },
+  "homepage": "https://github.com/ducreyna/node-scripts-loader",
+  "devDependencies": {
+    "jshint": "^2.6.0",
+    "mocha": "^2.1.0"
+  }
+}
