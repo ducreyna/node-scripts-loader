@@ -1,7 +1,9 @@
-all: hint unit
+all: lint test
 
-hint:
+lint:
 	./node_modules/.bin/jshint ./lib/*.js
 
-unit:
-	./node_modules/.bin/mocha ./test/*.js
+test:
+	./node_modules/.bin/mocha test/*.js
+
+.PHONY: all lint test
