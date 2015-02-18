@@ -1,6 +1,8 @@
 # node-scripts-loader
 
-Node Module to load functions or scripts on the fly.
+Node Module to load functions or scripts on the fly. 
+
+If you load a script from a file, you can activate `watch` option that will reload it automatically when you update the file. __Be careful__ to correctly update your file, otherwise an exception will be thrown.
 
 ## Installation
 
@@ -43,7 +45,7 @@ try {
 	loader.call(sumKey, 1, 1);
 	
 	// Update anonymous function
-	loader.load(sumKey, function (a, b, c) { return a + b + c;}); // Throws an error because 'safe' option was true on that key
+	loader.load(sumKey, function (a, b, c) { return a + b + c;}); // Do nothing because 'safe' option was true on that key
 	
 	// Remove script
 	loader.remove(diffKey);
