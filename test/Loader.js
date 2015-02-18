@@ -38,13 +38,6 @@ describe('Hot scripts loader', function () {
 		assert.notStrictEqual(Object.keys(loader._scripts).indexOf(diffKey), -1);
 	});
 
-	it('Load script with a key already defined', function () {
-		// Asserts
-		assert.throws(function () {
-			loader.load(sumKey, sum, {'safe': true})
-		}, Error);
-	});
-
 	it('Call anonymous function', function () {
 		var a = 1, b = 1;
 		var result = sum(a, b);
